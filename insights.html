@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MindTrack Insights</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <h2>🧠 MindTrack</h2>
+
+    <a href="dashboard.html">Dashboard</a>
+
+</header>
+
+
+<main class="insights-container">
+
+    <h1>📊 Your Wellbeing Insights</h1>
+
+    <p>
+        These insights are based on your personal
+        wellbeing history.
+    </p>
+
+
+    <div class="metrics">
+
+        <div class="metric-card">
+
+            <h3>😊 Mood</h3>
+
+            <div id="moodValue">
+                --
+            </div>
+
+        </div>
+
+
+        <div class="metric-card">
+
+            <h3>😟 Stress</h3>
+
+            <div id="stressValue">
+                --
+            </div>
+
+        </div>
+
+
+        <div class="metric-card">
+
+            <h3>😴 Sleep</h3>
+
+            <div id="sleepValue">
+                --
+            </div>
+
+        </div>
+
+
+        <div class="metric-card">
+
+            <h3>📚 Study</h3>
+
+            <div id="studyValue">
+                --
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="patternBox"
+         class="pattern-box">
+
+        Loading your pattern...
+
+    </div>
+
+
+    <div class="suggestions-card">
+
+        <h2>💡 Supportive Suggestions</h2>
+
+        <ul id="suggestionsList">
+
+        </ul>
+
+    </div>
+
+
+    <button onclick="goToSupport()">
+
+        🏫 Explore Campus Support
+
+    </button>
+
+
+</main>
+
+
+<script src="insights.js"></script>
+
+</body>
+
+</html>
