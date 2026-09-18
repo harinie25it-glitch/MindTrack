@@ -1,0 +1,230 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Support - MindTrack</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Top Navigation -->
+
+    <header class="topbar">
+
+        <h2>🧠 MindTrack</h2>
+
+        <a href="dashboard.html">Dashboard</a>
+
+    </header>
+
+
+    <!-- Main Content -->
+
+    <main class="support-container">
+
+        <div class="support-header">
+
+            <h1>🏫 Campus Support</h1>
+
+            <p>
+                Explore available support resources when
+                you feel you would benefit from additional help.
+            </p>
+
+        </div>
+
+
+        <!-- Support Cards -->
+
+        <section class="support-grid">
+
+
+            <!-- Counseling -->
+
+            <div class="support-card">
+
+                <div class="support-icon">
+                    🧑‍🏫
+                </div>
+
+                <h2>Counseling Support</h2>
+
+                <p>
+                    Connect with campus counseling services
+                    for confidential wellbeing support.
+                </p>
+
+                <div class="support-info">
+
+                    <p>📍 Student Wellness Centre</p>
+
+                    <p>🕐 Check campus availability</p>
+
+                </div>
+
+                <button onclick="showMessage('Counseling Support')">
+                    View Support
+                </button>
+
+            </div>
+
+
+            <!-- Health Centre -->
+
+            <div class="support-card">
+
+                <div class="support-icon">
+                    🏥
+                </div>
+
+                <h2>Health Centre</h2>
+
+                <p>
+                    Find information about available campus
+                    health services and assistance.
+                </p>
+
+                <div class="support-info">
+
+                    <p>📍 Campus Health Centre</p>
+
+                    <p>🕐 Check campus availability</p>
+
+                </div>
+
+                <button onclick="showMessage('Health Centre')">
+                    View Support
+                </button>
+
+            </div>
+
+
+            <!-- Student Support -->
+
+            <div class="support-card">
+
+                <div class="support-icon">
+                    🎓
+                </div>
+
+                <h2>Student Support</h2>
+
+                <p>
+                    Access academic and student support
+                    resources available on campus.
+                </p>
+
+                <div class="support-info">
+
+                    <p>📚 Academic Support</p>
+
+                    <p>👥 Student Services</p>
+
+                </div>
+
+                <button onclick="showMessage('Student Support')">
+                    View Support
+                </button>
+
+            </div>
+
+
+            <!-- Emergency -->
+
+            <div class="support-card emergency-card">
+
+                <div class="support-icon">
+                    🚨
+                </div>
+
+                <h2>Emergency Support</h2>
+
+                <p>
+                    For immediate safety concerns, use your
+                    institution's verified emergency contacts
+                    or local emergency services.
+                </p>
+
+                <div class="support-info">
+
+                    <p>📞 Use verified campus contact</p>
+
+                    <p>📍 Campus Security</p>
+
+                </div>
+
+                <button onclick="showMessage('Emergency Support')">
+                    View Support
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- Privacy Notice -->
+
+        <section class="support-privacy">
+
+            <h3>🔐 Your Privacy Matters</h3>
+
+            <p>
+                MindTrack does not diagnose mental-health
+                conditions. The support information provided
+                here is intended to help students find
+                appropriate resources when they choose to
+                seek additional support.
+            </p>
+
+        </section>
+
+
+        <!-- Back Button -->
+
+        <button
+            class="back-button"
+            onclick="goBack()">
+
+            ← Back to Dashboard
+
+        </button>
+
+
+    </main>
+
+
+    <script>
+
+        function showMessage(service) {
+
+            alert(
+                service +
+                " information can be connected to verified campus resources."
+            );
+
+        }
+
+
+        function goBack() {
+
+            window.location.href = "dashboard.html";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+```
